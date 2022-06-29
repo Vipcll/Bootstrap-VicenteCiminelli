@@ -1,0 +1,41 @@
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    div article:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    h1,
+    article h2 {
+        font-family: $fuente;
+        position: relative;
+    }
+}
+
+.cajaCarousel {
+    margin: 50px;
+}
+
+.carousel {
+    margin: 40px auto;
+    width: 60%;
+}
+
+.imanes {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .carousel {
+        width: 100%;
+    }
+}
+
+@media (min-width:1400px) {
+    .carousel {
+        width: 40%;
+    }
+}
